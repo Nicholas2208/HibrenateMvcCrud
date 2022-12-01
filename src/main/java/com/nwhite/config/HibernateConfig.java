@@ -23,8 +23,12 @@ import java.util.Properties;
         "classpath:application.properties"
 })
 public class HibernateConfig {
-    @Autowired
+
     private Environment environment;
+
+    public HibernateConfig(Environment environment) {
+        this.environment = environment;
+    }
 
     @Bean(name = "entityManagerFactory")
     public LocalContainerEntityManagerFactoryBean getEntityManagerFactoryBean() {

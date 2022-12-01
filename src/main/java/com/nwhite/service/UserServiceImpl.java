@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService{
-    UserDao userDao;
+    private UserDao userDao;
 
     public UserServiceImpl(UserDao userDao) {
         this.userDao = userDao;
