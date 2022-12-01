@@ -2,12 +2,12 @@ package com.nwhite.service;
 
 import com.nwhite.dao.UserDao;
 import com.nwhite.model.User;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Component
+@Service
 public class UserServiceImpl implements UserService{
     UserDao userDao;
 
